@@ -12,15 +12,14 @@ $(document).ready(function(){
         search(key);
     })
 })
-function search(key)
+function search(ajaxActive,key)
 {
-    var keys = key;
-    console.log(keys);
+    console.log(key);
     $.ajax({
         url: 'views/students/data-search.php',
         type : 'GET',
         dataType: 'html',
-        data:{ key: keys},
+        data:{ ajaxActive: ajaxActive,key: key},
         success: function (result)
         {
             console.log(result);

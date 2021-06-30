@@ -31,15 +31,15 @@
             return $pre->execute();
         }
 
-        public function search($key){
-
-            $sql = "SELECT students.id ,name,phone,email,address,students.faculty_id, title from students,faculty
-            WHERE (phone like '%$key%' or email LIKE '%$key%' or name LIKE '%$key%') AND faculty.id = students.faculty_id";
-            $pre = $this->pdo->prepare($sql);
-            $pre->execute();
-            $result =  $pre->fetchAll(PDO::FETCH_ASSOC);
-            return $result;
-
-        }
+//        public function search($key){
+//
+//            $sql = "SELECT students.id ,name,phone,email,address,students.faculty_id, title from students,faculty
+//            WHERE (phone like '%$key%' or email LIKE '%$key%' or name LIKE '%$key%') AND faculty.id = students.faculty_id";
+//            $pre = $this->pdo->prepare($sql);
+//            $pre->execute();
+//            $result =  $pre->fetchAll(PDO::FETCH_ASSOC);
+//            return $result;
+//
+//        }
 
     }

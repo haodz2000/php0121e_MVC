@@ -9,7 +9,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="form-group">
-							<input type="text" onkeyup="search(this.value)" name="key" class="form-control" id="search" placeholder="Input phone search">
+							<input type="text" onkeyup="search('searchStudent',this.value)" name="key" class="form-control" id="search" placeholder="Input phone search">
 						</div>
 					</div>
 <!--					<div class="col-md-2" style="padding-top: 15px;">-->
